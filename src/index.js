@@ -46,10 +46,26 @@ const navLinks = document.querySelectorAll('nav a');
 const headerImg = document.querySelector('header img');
 const ctaText = document.querySelector('.cta h1');
 const ctaButton = document.querySelector('.cta button');
+const ctaImg = document.querySelector('.cta img');
+const topContentTitles = document.querySelectorAll('.top-content h4');
+const topContentText = document.querySelectorAll('.top-content p');
+const midImg = document.querySelector('.middle-img');
+const bottomContentTitles = document.querySelectorAll('.bottom-content h4');
+const bottomContentText = document.querySelectorAll('.bottom-content p');
+const contactTitle = document.querySelector('.contact h4');
+const contactText = document.querySelectorAll('.contact p');
+const footerCR = document.querySelector('footer a');
 
-
-console.log(navLinks);
-console.log(headerImg);
-console.log(ctaText);
-console.log(ctaButton);
-
+console.log('navLinks', navLinks);
+console.log('headerImg', headerImg);
+console.log('ctaText', ctaText);
+console.log('ctaButton', ctaButton);
+console.log('ctaImg', ctaImg);
+console.log('top Titles', topContentTitles);
+console.log('top Text', topContentText);
+console.log('middle img', midImg);
+console.log('bottom Titles', bottomContentTitles);
+console.log('bottom Text', bottomContentText);
+console.log('contact title', contactTitle);
+console.log('contact text', contactText);
+console.log('footer copyright', footerCR);
