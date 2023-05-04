@@ -67,13 +67,16 @@ document.querySelector('.cta button').textContent = siteContent.cta.button;
 document.querySelector('.cta img').src = siteContent.images['cta-img'];
 console.log(siteContent.cta.h1);
 
+//Top Section
+const topContent = document.querySelectorAll('.top-content div');
+topContent[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent[0].children[1].textContent = siteContent['main-content']['features-content'];
+topContent[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent[1].children[1].textContent = siteContent['main-content']['about-content'];
 
 
-// console.log('headerImg', headerImg);
-// console.log('ctaText', ctaText);
-// console.log('ctaButton', ctaButton);
-// console.log('ctaImg', ctaImg);
-// console.log('top Titles', topContentTitles);
+
+console.log('top content', topContent);
 // console.log('top Text', topContentText);
 // console.log('middle img', midImg);
 // console.log('bottom Titles', bottomContentTitles);
@@ -81,4 +84,3 @@ console.log(siteContent.cta.h1);
 // console.log('contact title', contactTitle);
 // console.log('contact text', contactText);
 // console.log('footer copyright', footerCR);
-console.log(document.querySelectorAll('nav a'));
