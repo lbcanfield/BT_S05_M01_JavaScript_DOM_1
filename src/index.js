@@ -74,7 +74,8 @@ topContent[0].children[1].textContent = siteContent['main-content']['features-co
 topContent[1].children[0].textContent = siteContent['main-content']['about-h4'];
 topContent[1].children[1].textContent = siteContent['main-content']['about-content'];
 
-
+//Middle Image
+document.querySelector('.middle-img').src = siteContent.images['accent-img'];
 
 console.log('top content', topContent);
 // console.log('top Text', topContentText);
