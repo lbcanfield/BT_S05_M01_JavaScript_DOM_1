@@ -56,16 +56,23 @@ const contactTitle = document.querySelector('.contact h4');
 const contactText = document.querySelectorAll('.contact p');
 const footerCR = document.querySelector('footer a');
 
-console.log('navLinks', navLinks);
-console.log('headerImg', headerImg);
-console.log('ctaText', ctaText);
-console.log('ctaButton', ctaButton);
-console.log('ctaImg', ctaImg);
-console.log('top Titles', topContentTitles);
-console.log('top Text', topContentText);
-console.log('middle img', midImg);
-console.log('bottom Titles', bottomContentTitles);
-console.log('bottom Text', bottomContentText);
-console.log('contact title', contactTitle);
-console.log('contact text', contactText);
-console.log('footer copyright', footerCR);
+const navLinksText = Object.values(siteContent.nav);
+
+
+console.log(navLinksText);
+
+
+
+// console.log('navLinks', navLinks);
+// console.log('headerImg', headerImg);
+// console.log('ctaText', ctaText);
+// console.log('ctaButton', ctaButton);
+// console.log('ctaImg', ctaImg);
+// console.log('top Titles', topContentTitles);
+// console.log('top Text', topContentText);
+// console.log('middle img', midImg);
+// console.log('bottom Titles', bottomContentTitles);
+// console.log('bottom Text', bottomContentText);
+// console.log('contact title', contactTitle);
+// console.log('contact text', contactText);
+// console.log('footer copyright', footerCR);
