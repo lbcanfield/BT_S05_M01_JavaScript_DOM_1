@@ -56,10 +56,14 @@ const contactTitle = document.querySelector('.contact h4');
 const contactText = document.querySelectorAll('.contact p');
 const footerCR = document.querySelector('footer a');
 
+
+
+//Navigation Section
 const navLinksText = Object.values(siteContent.nav);
+navLinks.forEach((text, index) => {
+     text.textContent = navLinksText[index]
+})
 
-
-console.log(navLinksText);
 
 
 
@@ -76,3 +80,4 @@ console.log(navLinksText);
 // console.log('contact title', contactTitle);
 // console.log('contact text', contactText);
 // console.log('footer copyright', footerCR);
+// console.log(navLinksText);
