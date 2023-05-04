@@ -42,9 +42,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 console.log('project wired!')
 
 
-const navLinks = document.querySelectorAll('nav a');
 const headerImg = document.querySelector('header img');
-const ctaText = document.querySelector('.cta h1');
 const ctaButton = document.querySelector('.cta button');
 const ctaImg = document.querySelector('.cta img');
 const topContentTitles = document.querySelectorAll('.top-content h4');
@@ -60,14 +58,17 @@ const footerCR = document.querySelector('footer a');
 
 //Navigation Section
 const navLinksText = Object.values(siteContent.nav);
-navLinks.forEach((text, index) => {
+document.querySelectorAll('nav a').forEach((text, index) => {
      text.textContent = navLinksText[index]
+     text.classList.add('italic');
 })
 
+//CTA Section
+document.querySelector('.cta h1').textContent = siteContent.cta.h1;
+console.log(siteContent.cta.h1);
 
 
 
-// console.log('navLinks', navLinks);
 // console.log('headerImg', headerImg);
 // console.log('ctaText', ctaText);
 // console.log('ctaButton', ctaButton);
@@ -80,4 +81,4 @@ navLinks.forEach((text, index) => {
 // console.log('contact title', contactTitle);
 // console.log('contact text', contactText);
 // console.log('footer copyright', footerCR);
-// console.log(navLinksText);
+console.log(document.querySelectorAll('nav a'));
