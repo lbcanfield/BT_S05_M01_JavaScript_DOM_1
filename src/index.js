@@ -44,7 +44,12 @@ console.log('project wired!')
 
 const navLinks = document.querySelectorAll('nav a');
 const headerImg = document.querySelector('header img');
+const ctaText = document.querySelector('.cta h1');
+const ctaButton = document.querySelector('.cta button');
+
 
 console.log(navLinks);
 console.log(headerImg);
+console.log(ctaText);
+console.log(ctaButton);
 
