@@ -42,9 +42,6 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 console.log('project wired!')
 
 
-const headerImg = document.querySelector('header img');
-const ctaButton = document.querySelector('.cta button');
-const ctaImg = document.querySelector('.cta img');
 const topContentTitles = document.querySelectorAll('.top-content h4');
 const topContentText = document.querySelectorAll('.top-content p');
 const midImg = document.querySelector('.middle-img');
@@ -62,9 +59,12 @@ document.querySelectorAll('nav a').forEach((text, index) => {
      text.textContent = navLinksText[index]
      text.classList.add('italic');
 })
+document.querySelector('header img').src = siteContent.images['logo-img'];
 
 //CTA Section
 document.querySelector('.cta h1').textContent = siteContent.cta.h1;
+document.querySelector('.cta button').textContent = siteContent.cta.button;
+document.querySelector('.cta img').src = siteContent.images['cta-img'];
 console.log(siteContent.cta.h1);
 
 
