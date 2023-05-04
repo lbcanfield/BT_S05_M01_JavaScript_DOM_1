@@ -57,7 +57,7 @@ const footerCR = document.querySelector('footer a');
 const navLinksText = Object.values(siteContent.nav);
 document.querySelectorAll('nav a').forEach((text, index) => {
      text.textContent = navLinksText[index]
-     text.setAttribute('href', navLinksText[index].toLowerCase())
+     text.setAttribute('href', `#${navLinksText[index].toLowerCase()}`)
      // text. = `#${navLinksText[index].toLowerCase}`
      text.classList.add('italic');
      // text.classList.add(`${navLinksText[index]}`)
@@ -73,8 +73,10 @@ console.log(siteContent.cta.h1);
 //Top Section
 const topContent = document.querySelectorAll('.top-content div');
 topContent[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent[0].children[0].id = 'features';
 topContent[0].children[1].textContent = siteContent['main-content']['features-content'];
 topContent[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent[1].children[0].id = 'about';
 topContent[1].children[1].textContent = siteContent['main-content']['about-content'];
 
 //Middle Image
@@ -83,14 +85,16 @@ document.querySelector('.middle-img').src = siteContent.images['accent-img'];
 const bottomContent = document.querySelectorAll('.bottom-content div')
 bottomContent[0].classList.add('services');
 bottomContent[0].children[0].textContent = siteContent['main-content']['services-h4']
+bottomContent[0].children[0].id = 'services';
 bottomContent[0].children[1].textContent = siteContent['main-content']['services-content']
-bottomContent[0].classList.add('product');
 
 bottomContent[1].children[0].textContent = siteContent['main-content']['product-h4']
+bottomContent[1].children[0].id = 'product';
 bottomContent[1].children[1].textContent = siteContent['main-content']['product-content']
 bottomContent[0].classList.add('vision');
 
 bottomContent[2].children[0].textContent = siteContent['main-content']['vision-h4']
+bottomContent[2].children[0].id = 'vision';
 bottomContent[2].children[1].textContent = siteContent['main-content']['vision-content']
 
 
