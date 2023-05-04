@@ -38,11 +38,3 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
           "accent-img": "http://localhost:9000/img/accent.png",
      },
 };
-
-console.log('project wired!')
-
-
-const navLinks = document.querySelectorAll('nav a');
-
-console.log(navLinks);
-
