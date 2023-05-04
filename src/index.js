@@ -43,6 +43,8 @@ console.log('project wired!')
 
 
 const navLinks = document.querySelectorAll('nav a');
+const headerImg = document.querySelector('header img');
 
 console.log(navLinks);
+console.log(headerImg);
 
