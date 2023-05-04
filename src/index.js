@@ -39,17 +39,9 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
      },
 };
 
-console.log('project wired!')
+// console.log('project wired!')
 
 
-const topContentTitles = document.querySelectorAll('.top-content h4');
-const topContentText = document.querySelectorAll('.top-content p');
-const midImg = document.querySelector('.middle-img');
-const bottomContentTitles = document.querySelectorAll('.bottom-content h4');
-const bottomContentText = document.querySelectorAll('.bottom-content p');
-const contactTitle = document.querySelector('.contact h4');
-const contactText = document.querySelectorAll('.contact p');
-const footerCR = document.querySelector('footer a');
 
 
 
@@ -68,13 +60,13 @@ document.querySelector('header img').src = siteContent.images['logo-img'];
 document.querySelector('.cta h1').textContent = siteContent.cta.h1;
 document.querySelector('.cta button').textContent = siteContent.cta.button;
 document.querySelector('.cta img').src = siteContent.images['cta-img'];
-console.log(siteContent.cta.h1);
 
 //Top Section
 const topContent = document.querySelectorAll('.top-content div');
 topContent[0].children[0].textContent = siteContent['main-content']['features-h4'];
 topContent[0].children[0].id = 'features';
 topContent[0].children[1].textContent = siteContent['main-content']['features-content'];
+
 topContent[1].children[0].textContent = siteContent['main-content']['about-h4'];
 topContent[1].children[0].id = 'about';
 topContent[1].children[1].textContent = siteContent['main-content']['about-content'];
@@ -97,10 +89,15 @@ bottomContent[2].children[0].textContent = siteContent['main-content']['vision-h
 bottomContent[2].children[0].id = 'vision';
 bottomContent[2].children[1].textContent = siteContent['main-content']['vision-content']
 
+//Contact Section
+const contactSection = document.querySelector('.contact');
+contactSection.children[0].textContent = siteContent['contact']['contact-h4'];
+contactSection.children[0].id = 'contact';
+contactSection.children[1].textContent = siteContent['contact']['address'];
+contactSection.children[2].textContent = siteContent['contact']['email'];
+contactSection.children[3].textContent = siteContent['contact']['phone'];
 
-console.log(bottomContent);
-// console.log('bottom Titles', bottomContentTitles);
-// console.log('bottom Text', bottomContentText);
-// console.log('contact title', contactTitle);
-// console.log('contact text', contactText);
-// console.log('footer copyright', footerCR);
+//Footer
+document.querySelector('footer a').textContent = siteContent['footer']['copyright'];
+document.querySelector('footer a').classList.add('bold');
+
